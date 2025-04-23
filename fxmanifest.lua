@@ -17,7 +17,8 @@ shared_script '@ox_lib/init.lua'
 exports {
     'Notify',
     'Alert',
-    'SendNotification'
+    'SendNotification',
+    'SetQueueMax'
 }
 
 provides {
