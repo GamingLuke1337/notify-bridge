@@ -25,3 +25,5 @@ provides {
     'pNotify',
     'okokNotify'
 }
+
+dependency 'ox_lib'
