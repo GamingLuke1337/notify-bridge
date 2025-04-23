@@ -18,3 +18,7 @@ exports('SendNotification', function(data)
         closeButton = data.closeButton or false,
     })
 end)
+
+exports('SetQueueMax', function(queue, max)
+    -- This is a stub. lib.notify does not support queue limits.
+end)
