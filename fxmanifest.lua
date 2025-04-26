@@ -10,7 +10,7 @@ server_script 'bridge/update.lua'
 
 shared_scripts {
     '@ox_lib/init.lua',
-    'bridge/v42_notify',
+    'bridge/v42-notify',
     'bridge/esx_notify.lua',
     'bridge/pNotify.lua',
     'bridge/okokNotify.lua',
@@ -29,7 +29,7 @@ provides {
     'esx_notify',
     'pNotify',
     'okokNotify',
-    'v42_notify'
+    'v42-notify'
 }
 
 dependency 'ox_lib'
