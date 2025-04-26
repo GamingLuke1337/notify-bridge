@@ -6,13 +6,17 @@ author 'Gamingluke1337 github.com/GamingLuke1337'
 description 'Bridge to lib.notify'
 version '1.0.0'
 
-server_script 'bridge/update.lua'
+client_script 'bridge/cl_pNotify.lua'
+
+server_scripts {
+    'bridge/update.lua',
+    'bridge/sv_pNotify.lua'
+}
 
 shared_scripts {
     '@ox_lib/init.lua',
     'bridge/v42-notify',
     'bridge/esx_notify.lua',
-    'bridge/pNotify.lua',
     'bridge/okokNotify.lua',
     'config.lua'
 }
