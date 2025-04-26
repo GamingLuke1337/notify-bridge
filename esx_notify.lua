@@ -1,3 +1,4 @@
+if not Config.Framework == 'ESX' then return end
 ESX = exports['es_extended']:getSharedObject()
 local Debug = ESX.GetConfig().EnableDebug
 
