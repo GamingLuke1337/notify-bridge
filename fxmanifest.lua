@@ -6,25 +6,30 @@ author 'Gamingluke1337 github.com/GamingLuke1337'
 description 'Bridge to lib.notify'
 version '1.0.0'
 
-client_scripts {
-    'esx_notify.lua',
-    'pNotify.lua',
-    'okokNotify.lua'
-}
+server_script 'bridge/update.lua'
 
-shared_script '@ox_lib/init.lua'
+shared_scripts {
+    '@ox_lib/init.lua',
+    'bridge/v42_notify',
+    'bridge/esx_notify.lua',
+    'bridge/pNotify.lua',
+    'bridge/okokNotify.lua',
+    'config.lua'
+}
 
 exports {
     'Notify',
     'Alert',
     'SendNotification',
-    'SetQueueMax'
+    'SetQueueMax',
+    'notify'
 }
 
 provides {
     'esx_notify',
     'pNotify',
-    'okokNotify'
+    'okokNotify',
+    'v42_notify'
 }
 
 dependency 'ox_lib'
